@@ -78,7 +78,7 @@ kotlin {
 
 android {
   namespace = "app.cash.paging.compose"
-  compileSdk = 34
+  compileSdk = 35
 
   defaultConfig {
     minSdk = 21
