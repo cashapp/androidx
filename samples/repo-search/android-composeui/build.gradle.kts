@@ -6,7 +6,7 @@ plugins {
 
 android {
   namespace = "app.cash.paging.samples.reposearch"
-  compileSdk = 34
+  compileSdk = 35
 
   defaultConfig {
     applicationId = "app.cash.paging.samples.reposearch"
