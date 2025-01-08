@@ -1,17 +1,22 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base",
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  extends: [
+    'config:recommended',
   ],
-  "packageRules": [
+  packageRules: [
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true,
+      matchUpdateTypes: [
+        'minor',
+        'patch',
+        'pin',
+        'digest',
+      ],
+      automerge: true,
     },
     {
-      "matchPackagePrefixes": [
-        "androidx.compose.compiler",
-        "org.jetbrains.kotlin:kotlin",
+      matchPackageNames: [
+        'androidx.compose.compiler{/,}**',
+        'org.jetbrains.kotlin:kotlin{/,}**',
       ],
     },
   ],
